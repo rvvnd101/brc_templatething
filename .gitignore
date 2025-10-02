@@ -1,0 +1,15 @@
+# build shit
+bin/
+obj/
+
+# ide shit
+.idea/
+.vs/
+.vscode/
+*.user
+
+# build shit
+thunderstore/*.md
+thunderstore/BepInEx
+thunderstore/*.zip
+out/

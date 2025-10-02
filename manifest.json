@@ -1,0 +1,8 @@
+{
+  "name": "plugin_name_here",
+  "version_number": "1.0.0",
+  "author": "authorname",
+  "description": "desc here :3",
+  "website_url": "",
+  "dependencies": []
+}
