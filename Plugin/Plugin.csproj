@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <Version>1.0.0</Version>
         <AssemblyName>author.PluginTemplate</AssemblyName>
@@ -69,6 +69,6 @@
     </ItemGroup>
 
     <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-        <Exec Command="xcopy /Y /I &quot;$(TargetDir)&quot; &quot;$(BepInExDirectory)/plugins/Moverrr&quot;" Condition="'$([System.Runtime.InteropServices.RuntimeInformation]::IsOSPlatform($([System.Runtime.InteropServices.OSPlatform]::Windows)))'"/>
+        <Exec Command="xcopy /Y /I &quot;$(TargetDir)&quot; &quot;$(BepInExDirectory)/plugins/$(AssemblyName)&quot;" Condition="'$([System.Runtime.InteropServices.RuntimeInformation]::IsOSPlatform($([System.Runtime.InteropServices.OSPlatform]::Windows)))'"/>
     </Target>
 </Project>
